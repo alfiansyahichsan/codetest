@@ -6,9 +6,37 @@
 
 #### 2. MySql 5.7.28
 
+<br/>
+
+## How to install
+
+#### 1. Git clone this repo
+
+#### 2. Open the project and then
+
+```
+npm install
+```
+
 #### 3. Copy .env.example or rename into .env
 
+#### 4. Run Sequelize migrations to create search_logs table
+
+```
+npx sequelize-cli db:migrate
+```
+
+#### 5. Run the app (http://localhost:3001)
+
+```
+npm run dev
+```
+
 <br/>
+
+## TEST RESULT
+
+<br />
 
 ## 1. Simple Database Querying
 
@@ -67,3 +95,7 @@ Plus points:
 
 - Deploy your result to a public URL so we can check the result - Implementation of Clean Architecture is a BIG plus
 - Complete Unit tests
+
+```
+
+```
