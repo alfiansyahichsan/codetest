@@ -1,7 +1,7 @@
 {
-  "name": "sys-tokoeropa",
+  "name": "codetest-stockbit",
   "version": "1.0.0",
-  "description": "restful api sys toko eropa",
+  "description": "restful API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alfiansyahichsan/api-polarisva.git"
+    "url": "git+https://github.com/alfiansyahichsan/codetest.git"
   },
   "author": "Alfiansyah Ichsan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alfiansyahichsan/api-polarisva/issues"
+    "url": "https://github.com/alfiansyahichsan/codetest/issues"
   },
-  "homepage": "https://github.com/alfiansyahichsan/api-polarisva#readme",
+  "homepage": "https://github.com/alfiansyahichsan/codetest#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",

@@ -1,4 +1,14 @@
-# Node Js Express Js MySql (Sequelize)
+# Node Js Express Js MySql (Sequelize) | Tech Stack
+
+## Requirements for install (I'm using NVM)
+
+#### 1. NODE v14.16.0 AND NPM 6.14.11
+
+#### 2. MySql 5.7.28
+
+#### 3. Copy .env.example or rename into .env
+
+<br/>
 
 ## 1. Simple Database Querying
 
@@ -42,9 +52,7 @@ The Backend should :
 
   ⋅URL : http://www.omdbapi.com/
 
-  ⋅\*Example url call to search is --> GET
-
-  http://www.omdbapi.com/?apikey=21ecdcac&t=Batman
+  ⋅\*Example url call to search is --> GET http://www.omdbapi.com/?apikey=21ecdcac&t=Batman
 
 - Be written in ExpressJS framework
 
