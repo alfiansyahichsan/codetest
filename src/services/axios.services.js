@@ -1,7 +1,10 @@
 require('dotenv').config();
-const axios = require('axios');
+let axios = require('axios');
 
 class FetchService {
+  /**
+   * @param  {} params
+   */
   constructor(params) {
     this.client = axios.create({
       baseURL: `${process.env.OMDB_URL}/?apikey=${process.env.OMDB_KEY}`,
