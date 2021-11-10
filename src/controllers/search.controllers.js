@@ -1,4 +1,4 @@
-const FetchService = require('../services/axios.services');
+const SearchService = require('../services/search.services');
 
 const functions = {
   /**
@@ -9,7 +9,7 @@ const functions = {
     const { s, p } = req.query;
 
     try {
-      const data = await new FetchService({ s, p }).get();
+      const data = await new SearchService({ s, p }).get();
 
       res.status(200).json(data['Search']);
     } catch (error) {
@@ -25,7 +25,17 @@ const functions = {
     const { id } = req.params;
 
     try {
-      const data = await new FetchService({ i: id }).get();
+      const data = await new SearchService({ i: id }).get();
+
+      res.status(200).json(data);
+    } catch (error) {
+      res.status(400).json(error);
+    }
+  },
+
+  async getSearchLogs(req, res) {
+    try {
+      const data = await new SearchService().getLogs();
 
       res.status(200).json(data);
     } catch (error) {

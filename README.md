@@ -97,7 +97,3 @@ Plus points:
 
 - Deploy your result to a public URL so we can check the result - Implementation of Clean Architecture is a BIG plus
 - Complete Unit tests
-
-```
-
-```

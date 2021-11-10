@@ -7,6 +7,10 @@ const functions = {
       parameters: JSON.stringify(config['params']),
     });
   },
+
+  read() {
+    return SearchLogs.findAll({}).then((data) => data);
+  },
 };
 
 module.exports = functions;

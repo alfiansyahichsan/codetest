@@ -1,7 +1,7 @@
 require('dotenv').config();
 let axios = require('axios');
 
-const { create } = require('../repositories/searchlogs.repository');
+const { create, read } = require('../repositories/searchlogs.repository');
 
 class FetchService {
   /**
@@ -22,6 +22,10 @@ class FetchService {
 
       return res.data;
     });
+  }
+
+  async getLogs() {
+    return await read();
   }
 }
 
