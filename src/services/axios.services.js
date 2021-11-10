@@ -1,6 +1,8 @@
 require('dotenv').config();
 let axios = require('axios');
 
+const { create } = require('../repositories/searchlogs.repository');
+
 class FetchService {
   /**
    * @param  {} params
@@ -12,8 +14,14 @@ class FetchService {
     });
   }
 
-  async fetch() {
-    return await this.client.get().then((res) => res.data);
+  async get() {
+    return await this.client.get().then((res) => {
+      // SAVE ENDPOINT & PARAMS TO SEARCH LOGS
+      // DONT HAVE TO AWAIT THIS FUNC
+      create(res.config);
+
+      return res.data;
+    });
   }
 }
 
