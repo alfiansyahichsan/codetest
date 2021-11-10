@@ -20,13 +20,15 @@ npm install
 
 #### 3. Copy .env.example or rename into .env
 
-#### 4. Run Sequelize migrations to create search_logs table
+#### 4. Create database with name codetest (if you want to use another database, define it in .env file with variable name is DB_DATABASE)
+
+#### 5. Run Sequelize migrations to create search_logs table
 
 ```
 npx sequelize-cli db:migrate
 ```
 
-#### 5. Run the app (http://localhost:3001)
+#### 6. Run the app (http://localhost:3001)
 
 ```
 npm run dev
