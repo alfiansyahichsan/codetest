@@ -1,5 +1,3 @@
-const { ARRAY } = require('sequelize/types');
-const { values } = require('sequelize/types/lib/operators');
 const SearchService = require('../services/search.services');
 
 const functions = {
@@ -35,6 +33,10 @@ const functions = {
     }
   },
 
+  /**
+   * @param  {} req
+   * @param  {} res
+   */
   async getSearchLogs(req, res) {
     try {
       const data = await new SearchService().getLogs();
@@ -82,6 +84,7 @@ const functions = {
         }
       }
     }
+
     res.status(200).json(result);
   },
 };

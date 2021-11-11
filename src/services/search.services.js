@@ -17,7 +17,7 @@ class FetchService {
   async get() {
     return await this.client.get().then((res) => {
       // SAVE ENDPOINT & PARAMS TO SEARCH LOGS
-      // DONT HAVE TO AWAIT THIS FUNC
+      // NO NEED TO AWAIT THIS FUNCTION
       create(res.config);
 
       return res.data;
