@@ -2,7 +2,7 @@
 
 ## Requirements for install (I'm using NVM)
 
-#### 1. NODE v14.16.0 AND NPM 6.14.11
+#### 1. NODE v12.22.6 AND NPM 6.14.15
 
 #### 2. MySql 5.7.28
 
@@ -201,6 +201,8 @@ Simply access this link:
 
 - Search Logs https://codetest.alfiansyah-ichsan.dev/api/v1/search-logs
 
+For updated data better access the link above
+
 ![result](docs/searchlogs.png)
 
   <br />
@@ -211,7 +213,7 @@ Simply access this link:
   
   ⋅URL : http://www.omdbapi.com/
 
-Simply access this link https://codetest.alfiansyah-ichsan.dev/api/v1/find-first-string?str=stock(bit)
+Simply access this link https://codetest.alfiansyah-ichsan.dev/api/v1/find-first-string?str=stock(bit) | change the value as you want
   
 
 Refactored code
