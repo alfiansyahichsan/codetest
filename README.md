@@ -42,7 +42,6 @@ npm run dev
 
 ### :tada:  1. Simple Database Querying
 
-<br />
 
 #### Simply run this query on MySql Editor (I'm using MySql Online editor on https://onecompiler.com/mysql)
 
@@ -207,8 +206,13 @@ Simply access this link:
   <br />
 
 ### :tada:  3. Refactor the code below
-Simply access this link https://codetest.alfiansyah-ichsan.dev/api/v1/find-first-string?str=stock(bit)
 
+  ⋅Key : "21ecdcac"
+  
+  ⋅URL : http://www.omdbapi.com/
+
+Simply access this link https://codetest.alfiansyah-ichsan.dev/api/v1/find-first-string?str=stock(bit)
+  
 
 Refactored code
 ```
