@@ -242,9 +242,6 @@ anagram(req, res) {
   var words = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua'];
 
   let result = [];
-  // BASICALLY, COMPARE FIRST VALUE IN FIRST ARRAY
-  // TO ANOTHER LOOP
-  // INDEX I COMPARE TO INDEX JSON.LENGTH
   for (let i = 0; i < words.length; i++) {
     for (let i = 0; i < words.length; i++) {
       let check = true;
