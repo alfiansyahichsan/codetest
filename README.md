@@ -40,7 +40,7 @@ npm run dev
 
 <br />
 
-### :tada: 1. Simple Database Querying
+### :tada:  1. Simple Database Querying
 
 <br />
 
@@ -72,7 +72,7 @@ SELECT u.id AS ID, u.username AS USERNAME, un.username AS PARENTUSERNAME FROM US
 
 <br />
 
-### :tada: 2. Please write a small ExpressJS server to search movies from http://www.omdbapi.com/
+### :tada:  2. Please write a small ExpressJS server to search movies from http://www.omdbapi.com/
 
 <b>Result</b>
 <br />
@@ -206,11 +206,24 @@ Simply access this link:
 
   <br />
 
-### :tada: 3. Refactor the code below
+### :tada:  3. Refactor the code below
+Simply access this link https://codetest.alfiansyah-ichsan.dev/api/v1/find-first-string?str=stock(bit)
+
+
+Refactored code
+```
+const { str } = req.query;
+
+var result = str.substring(str.indexOf('(') + 1, str.indexOf(')'));
+
+res.status(200).json(result);
+```
+
+<b>Expected result should be "bit"</b>
 
 <br />
 
-### :tada: 4. Logic Test (Anagram)
+### :tada:  4. Logic Test (Anagram)
 
 input = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua']
 

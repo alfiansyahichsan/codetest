@@ -87,6 +87,47 @@ const functions = {
 
     res.status(200).json(result);
   },
+
+  /**
+   * @param  {} req
+   * @param  {} res
+   */
+  findFirstStringInBracket(req, res) {
+    const { str } = req.query;
+
+    var result = str.substring(str.indexOf('(') + 1, str.indexOf(')'));
+
+    res.status(200).json(result);
+
+    // if (str.length > 0) {
+    //   let indexFirstBracketFound = str.indexOf('(');
+
+    //   if (indexFirstBracketFound >= 0) {
+    //     let wordsAfterFirstBracket = str.substr(indexFirstBracketFound);
+
+    //     if (wordsAfterFirstBracket) {
+    //       wordsAfterFirstBracket = wordsAfterFirstBracket.substr(1);
+    //       console.log(wordsAfterFirstBracket);
+    //       let indexClosingBracketFound = wordsAfterFirstBracket.indexOf(')');
+    //       if (indexClosingBracketFound >= 0) {
+    //         const wordsAfter = wordsAfterFirstBracket.substring(
+    //           0,
+    //           indexClosingBracketFound
+    //         );
+    //         res.status(200).json(wordsAfter);
+    //       } else {
+    //         res.status(200).json('');
+    //       }
+    //     } else {
+    //       res.status(200).json('');
+    //     }
+    //   } else {
+    //     res.status(200).json('');
+    //   }
+    // } else {
+    //   res.status(200).json('');
+    // }
+  },
 };
 
 module.exports = functions;
